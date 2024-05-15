@@ -1,0 +1,13 @@
+<div *ngIf="breed$ | async as breed; else noBreed">
+    <h2>{{ breed.name }}</h2>
+    <p>{{ breed.description }}</p>
+    <p>Size: {{ breed.size }}</p>
+    <p>Origin: {{ breed.origin }}</p>
+    <p>Life Expectancy: {{ breed.lifeExpectancy }}</p>
+    <p>Temperament: {{ breed.temperament.join(', ') }}</p>
+    <img [src]="breed.image" alt="{{ breed.name }}">
+  </div>
+  <ng-template #noBreed>
+    <p>Breed not found</p>
+  </ng-template>
+  
