@@ -42,9 +42,14 @@ Added in the breed details component to show breed details on click on breed in 
 
 ## What I would refactor/do if I had more time
 
-Include more tests for the front end
-Style the details page
+Include more tests for the front end.
+
+Style the details page.
+
 Make the body of the api call in the front end global so you can add on variables locally, so readability is better.
+
 Create a load so that when the end point is loading/building something shows on the users end, ideally a dialog with a spinner stating it's loading.
+
 The images for the dogs is relient on the url of the dog to be there, maybe have an alias if it fails, or have locally stored dog images depends on preferability.
+
 Make the button on the front end a component, so it can be reused in other areas of the product.
